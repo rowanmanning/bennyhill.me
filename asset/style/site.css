@@ -1,11 +1,161 @@
 @charset "UTF-8";
 
+/* Base styles */
+
+html, body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f7f5f0;
+}
+
+
+/* Typography */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.7em;
+    color: #484848;
+}
+@media all and (max-width: 500px) {
+    body {
+        font-size: 15px;
+    }
+}
+h1 {
+    font-weight: bold;
+}
+small {
+    font-size: 0.8em;
+}
+a {
+    color: #4c8847;
+    text-decoration: underline;
+}
+a:visited {
+    color: #7f629c;
+}
+.space-above {
+    margin-top: 20px;
+}
+.space-below {
+    margin-bottom: 20px;
+}
+.space-below-less {
+    margin-bottom: 10px;
+}
+
+
+/* Forms */
+
+label {
+    display: block;
+}
+.text-input {
+    display: inline-block;
+    width: 90%;
+    line-height: 2em;
+    font-size: 1em;
+    border: solid 2px #999;
+    outline: none;
+}
+.button {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1em;
+    line-height: 2em;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #cae8a7;
+    outline: none;
+}
+.button:hover {
+    background-color: #cae8a7;   
+}
+.button:visited {
+    color: #333;
+}
+
+
+/* Header */
+
+.header {
+    padding: 20px;
+    background-color: #f7f5f0;
+    color: #484848;
+}
+.header h1, .header p {
+    display: inline;
+    font-size: 1em;
+}
+.header h1:after {
+    content: ":";
+}
+
+
+/* Main */
+
+.main {
+    min-height: 400px;
+    padding: 20px;
+    background-color: #fff;
+}
+.inner {
+    width: auto;
+    max-width: 600px;
+    margin: 140px auto;
+    text-align: center;
+}
+.inner.wide {
+    max-width: 900px;
+}
+
+@media all and (max-width: 500px) {
+    .inner {
+        margin: 60px auto;
+    }
+}
+
+
+/* GIF display */
+
+.volume-notice {
+    text-transform: uppercase;
+}
+.gif {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border: solid 10px #f7f5f0;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+}
+.footer h1, .footer p {
+    display: inline;
+    font-size: 1em;
+}
+.footer h1:after {
+    content: ":";
+}
+
+
 /* Utility classes */
 
 .hidden {
     display: none;
 }
-
 .hidden-video {
     position: absolute;
     top: -1000px;

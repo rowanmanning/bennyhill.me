@@ -22,29 +22,38 @@
         <p>Play Benny Hill music (Yakety Sax) alongside your favourite GIFs.</p>
     </div>
 
-    <!-- JavaScript notice -->
-    <noscript>
-        <p>
-            I'm really sorry, but this site needs JavaScript enabled to run properly.
-            There's no point in it working without, because the YouTube video I'm using wouldn't auto-play.
-            Apologies again, I still love you and I wish things could have worked out better&hellip;
-        </p>
-    </noscript>
-
     <!-- The Business -->
     <div class="main" role="main">
 
+        <!-- JavaScript notice -->
+        <noscript>
+            <div class="inner">
+                <p>
+                    I'm <em>really</em> sorry, but this site needs JavaScript enabled to run properly.
+                    There's no point in it working without, because the YouTube video I'm using wouldn't auto-play.
+                </p>
+                <p class="space-above">
+                    Apologies again, I still love you and I wish things could have worked out better between us&hellip;
+                </p>
+                <p class="space-above">
+                    <img class="gif" src="image/noscript.gif" alt="Sad Sad Dog"/>
+                </p>
+            </div>
+        </noscript>
+
         <!-- Set GIF form -->
-        <div id="set-gif-form" class="hidden">
-            <form action="" method="get">
-                <label for="gif-input">
-                    Benny Hill your own GIF by entering a URL:
+        <div id="set-gif-form" class="inner hidden">
+            <form action="" method="get" class="space-below">
+                <label for="gif-input" class="space-below-less">
+                    Benny Hill a GIF by entering a URL:
                 </label>
-                <input type="url" name="gif" id="gif-input" placeholder="GIF URL"/>
-                <input type="submit" value="Benny Hill It!"/>
+                <div class="space-below-less">
+                    <input type="url" name="gif" class="text-input" id="gif-input" placeholder="GIF URL"/>
+                </div>
+                <input type="submit" class="button" value="Benny Hill It!"/>
             </form>
             <p>
-                Here's some I made earlier:
+                Here are some I made earlier:<br/>
                 <a href="?gif=http://i.imgur.com/oY59Z89.gif">Table-Cloth</a>,
                 <a href="?gif=http://i.imgur.com/hM05OZn.gif">Dinghy</a>,
                 <a href="?gif=http://i.imgur.com/fYnFQO1.gif">Skit Skat Cat</a>.
@@ -52,12 +61,12 @@
         </div>
 
         <!-- The GIF -->
-        <div id="gif-container" class="hidden">
-            <p class="volume-notice">
+        <div id="gif-container" class="inner wide hidden">
+            <p class="volume-notice space-below">
                 <strong>Turn your volume up!</strong>
             </p>
-            <img id="gif" src="" alt="A Wonderful and amusing animated GIF"/>
-            <div class="controls">
+            <img id="gif" class="gif" src="" alt="A Wonderful and amusing animated GIF"/>
+            <div class="controls space-above">
                 <a href="#" target="_blank" id="twitter-share">Share on Twitter!</a> |
                 <a href="?">Benny Hill your own GIF!</a>
             </div>
