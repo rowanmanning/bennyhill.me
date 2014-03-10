@@ -126,6 +126,14 @@ label {
 .volume-notice {
     text-transform: uppercase;
 }
+.mobile-notice {
+    display: none;
+}
+@media all and (max-width: 500px) {
+    .mobile-notice {
+        display: block;
+    }
+}
 .gif {
     display: block;
     -moz-box-sizing: border-box;
