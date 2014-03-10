@@ -2,13 +2,64 @@
 <html lang="en">
 <head>
 
+    <!-- Page meta-information -->
     <meta charset="utf-8"/>
     <title>BennyHill.me</title>
+    <meta name="description" content="Play Benny Hill music (Yakety Sax) alongside your favourite GIFs"/>
+
+    <!-- Styles -->
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="asset/style/site.css"/>
+    <link rel="icon" href="/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
 
 </head>
 <body>
 
-    <p>Coming soon...</p>
+    <!-- Site header -->
+    <div class="header" role="banner">
+        <h1>Benny Hill Me</h1>
+        <p>Play Benny Hill music (Yakety Sax) alongside your favourite GIFs.</p>
+    </div>
+
+    <!-- JavaScript notice -->
+    <noscript>
+        <p>
+            I'm really sorry, but this site needs JavaScript enabled to run properly.
+            There's no point in it working without, because the YouTube video I'm using wouldn't auto-play.
+            Apologies again, I still love you and I wish things could have worked out better&hellip;
+        </p>
+    </noscript>
+
+    <!-- The Business -->
+    <div class="main" role="main">
+
+        <!-- Set GIF form -->
+        <div id="set-gif" class="hidden">
+            <form action="" method="get">
+                <input type="url" name="gif" placeholder="Enter the URL of your GIF here"/>
+                <input type="submit" value="Benny Hill It!"/>
+            </form>
+        </div>
+
+        <!-- The GIF -->
+        <div id="gif" class="hidden"></div>
+
+    </div>
+
+    <!-- Site footer -->
+    <div class="footer" role="contentinfo">
+        <small>
+            &copy; 2014,
+            <a rel="author" href="http://rowanmanning.com/">Rowan Manning</a>;
+            Uses <a href="http://youtu.be/MK6TXMsvgQg">this YouTube video</a> for audio;
+            Hosted <a href="https://github.com/rowanmanning/bennyhill.me">on GitHub</a>
+        </small>
+    </div>
+
+    <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="asset/script/site.js"></script>
 
 </body>
 </html>
