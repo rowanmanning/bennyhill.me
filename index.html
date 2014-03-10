@@ -35,7 +35,7 @@
     <div class="main" role="main">
 
         <!-- Set GIF form -->
-        <div id="set-gif" class="hidden">
+        <div id="set-gif-form" class="hidden">
             <form action="" method="get">
                 <input type="url" name="gif" placeholder="Enter the URL of your GIF here"/>
                 <input type="submit" value="Benny Hill It!"/>
@@ -43,17 +43,24 @@
         </div>
 
         <!-- The GIF -->
-        <div id="gif" class="hidden"></div>
+        <div id="gif-container" class="hidden">
+            <p class="volume-notice"><strong>Turn your volume up!</strong></p>
+            <img id="gif" src="" alt="A Wonderful and amusing animated GIF"/>
+            <div class="controls">
+                <a href="#" target="_blank" id="twitter-share">Share on Twitter!</a> |
+                <a href="?">Benny Hill your own GIF!</a>
+            </div>
+        </div>
 
     </div>
 
     <!-- Site footer -->
     <div class="footer" role="contentinfo">
         <small>
-            &copy; 2014,
+            Copyright &copy; 2014,
             <a rel="author" href="http://rowanmanning.com/">Rowan Manning</a>;
             Uses <a href="http://youtu.be/MK6TXMsvgQg">this YouTube video</a> for audio;
-            Hosted <a href="https://github.com/rowanmanning/bennyhill.me">on GitHub</a>
+            Hosted <a href="https://github.com/rowanmanning/bennyhill.me">on GitHub</a>.
         </small>
     </div>
 

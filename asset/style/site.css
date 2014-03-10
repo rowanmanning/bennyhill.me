@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* Utility classes */
+
+.hidden {
+    display: none;
+}
+
+.hidden-video {
+    position: absolute;
+    top: -1000px;
+    left: 0;
+}
