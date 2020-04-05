@@ -4,6 +4,8 @@ Benny Hill Me
 
 Play Benny Hill music (Yakety Sax) alongside your favourite GIFs. [http://bennyhill.me/][site]
 
+**⚠️ NOTE: This project is no longer being maintained. If you're interested in taking over maintenance, please contact me.**
+
 
 License
 -------
